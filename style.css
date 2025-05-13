@@ -1,12 +1,18 @@
-body {
+
+  body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: 'Georgia', serif;
-    background: hwb(30 96% 0%);
+    font-family:"Habibi", sans-serif;
+    background: rgba(247 244 237);
     color: #111;
     display: flex;
     flex-direction: column;
+  }
+
+  header {
+    background: rgba(247 244 237);
+    z-index: 100;
   }
   
   .navbar {
@@ -76,11 +82,26 @@ body {
     border-radius: 25px;
     cursor: pointer;
   }
+
+  .Primary{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    margin-top: 10vh;
+  }
   
   .container img {
-    width: 450px;
-    height: auto;
+    height: 580px;
     vertical-align: middle;
+    text-align: right;
+    right: 0;
+    top: 0;
+  }
+
+  .container {
+    position: absolute;
+    right: 0;
+    z-index: 10;
   }
 
 
@@ -88,6 +109,8 @@ body {
   footer {
     padding: 20px 40px;
     border-top: 1px solid #ddd;
+    z-index: 100;
+    background: rgba(247 244 237);
   }
 
   
